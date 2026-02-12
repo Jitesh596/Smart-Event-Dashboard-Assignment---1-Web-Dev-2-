@@ -1,5 +1,157 @@
-#form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#56ccf2,#2f80ed);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.title{
+    color:white;
+    margin-bottom:30px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.main{
+    display:flex;
+    gap:30px;
+}
+
+/* BIG WHITE CARDS */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* LEFT */
+.formCard{
+    width:340px;
+}
+
+/* RIGHT */
+.eventsCard{
+    width:520px;
+}
+
+/* HEADINGS */
+.card h2{
+    color:#4f6bdc;
+    margin-bottom:15px;
+}
+
+/* FORM */
+label{
+    font-weight:bold;
+    font-size:14px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0 14px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* BUTTON STYLE */
+.addBtn{
+    width:100%;
+    padding:12px;
+    background:linear-gradient(90deg,#4facfe,#00c6ff);
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* TOP BUTTONS */
+.topBtns{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.topBtns button{
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#4facfe,#00c6ff);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* EVENT CARD */
+.event_Card{
+    background:#eef3ff;
+    padding:18px;
+    border-radius:14px;
+    margin-bottom:15px;
+    position:relative;
+}
+
+/* DELETE X */
+.delete{
+    position:absolute;
+    right:12px;
+    top:10px;
+    background:#ff5b5b;
+    color:white;
+    border:none;
+    border-radius:50%;
+    width:25px;
+    height:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* CATEGORY BADGE */
+.cat{
+    display:inline-block;
+    background:#4f6bdc;
+    color:white;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:12px;
+    margin:6px 0;
+}
+
+.event_Card h3{
+    margin-bottom:6px;
+}
+
+.domBox{
+    margin-top:30px;
+    width:900px;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.domBox h2{
+    color:#4f6bdc;
+    margin-bottom:15px;
+}
+
+.keyBox{
+    background:#f2f4f8;
+    border:2px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
 }
