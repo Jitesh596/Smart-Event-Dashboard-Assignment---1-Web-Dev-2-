@@ -1,157 +1,222 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#56ccf2,#2f80ed);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:40px 20px;
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #294e9f, #8fe3d1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.title{
-    color:white;
-    margin-bottom:30px;
-    font-size:32px;
-    font-weight:bold;
+
+.container {
+  width: 95%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    "title title"
+    "form events"
+    "dom dom";
+  gap: 20px;
 }
 
-.main{
-    display:flex;
-    gap:30px;
+
+.text {
+  grid-area: title;
+  text-align: center;
+  color: #2c2c2c;
 }
 
-/* BIG WHITE CARDS */
-.card{
-    background:white;
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+.form {
+  grid-area: form;
+  background: #f6f8ff;
+  padding: 18px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* LEFT */
-.formCard{
-    width:340px;
+.form label {
+  font-size: 13px;
+  color: #444;
 }
 
-/* RIGHT */
-.eventsCard{
-    width:520px;
+.form input{
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d0d6ff;
+  font-size: 13px;
+  outline: none;
+}
+.form select{
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d0d6ff;
+  font-size: 13px;
+  outline: none;
+}
+.form textarea {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d0d6ff;
+  font-size: 13px;
+  outline: none;
 }
 
-/* HEADINGS */
-.card h2{
-    color:#4f6bdc;
-    margin-bottom:15px;
+.form textarea {
+  resize: none;
+  height: 70px;
 }
 
-/* FORM */
-label{
-    font-weight:bold;
-    font-size:14px;
+.form input:focus{
+    border-color: #6f7cff;
+}
+.form select:focus{
+    border-color: #6f7cff;
+}
+.form textarea:focus {
+  border-color: #6f7cff;
 }
 
-input,select,textarea{
-    width:100%;
-    padding:10px;
-    margin:8px 0 14px 0;
-    border-radius:8px;
-    border:1px solid #ccc;
+
+.btn{
+  background: linear-gradient(135deg, #6f7cff, #8a5cff);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+.clearall{
+  background: linear-gradient(135deg, #6f7cff, #8a5cff);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* BUTTON STYLE */
-.addBtn{
-    width:100%;
-    padding:12px;
-    background:linear-gradient(90deg,#4facfe,#00c6ff);
-    border:none;
-    border-radius:10px;
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
+.sample {
+  background: linear-gradient(135deg, #6f7cff, #8a5cff);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* TOP BUTTONS */
-.topBtns{
-    display:flex;
-    gap:10px;
-    margin-bottom:15px;
+.btn:hover{
+    transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(111, 124, 255, 0.4);
+}
+.clearall:hover{
+    transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(111, 124, 255, 0.4);
+}
+.sample:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(111, 124, 255, 0.4);
 }
 
-.topBtns button{
-    flex:1;
-    padding:10px;
-    border:none;
-    border-radius:10px;
-    background:linear-gradient(90deg,#4facfe,#00c6ff);
-    color:white;
-    font-weight:bold;
-    cursor:pointer;
+
+.events {
+  grid-area: events;
+  background: #f6f8ff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* EVENT CARD */
-.event_Card{
-    background:#eef3ff;
-    padding:18px;
-    border-radius:14px;
-    margin-bottom:15px;
-    position:relative;
+.events button {
+  width: 48%;
+  margin-bottom: 12px;
 }
 
-/* DELETE X */
-.delete{
-    position:absolute;
-    right:12px;
-    top:10px;
-    background:#ff5b5b;
-    color:white;
-    border:none;
-    border-radius:50%;
-    width:25px;
-    height:25px;
-    cursor:pointer;
-    font-weight:bold;
+.cards {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-/* CATEGORY BADGE */
-.cat{
-    display:inline-block;
-    background:#4f6bdc;
-    color:white;
-    padding:4px 10px;
-    border-radius:20px;
-    font-size:12px;
-    margin:6px 0;
+
+.card {
+  width: 180px;
+  background: #eef2ff;
+  padding: 12px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
-.event_Card h3{
-    margin-bottom:6px;
+
+.dlt {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  background: #ff5b5b;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.domBox{
-    margin-top:30px;
-    width:900px;
-    background:white;
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+.domContainer {
+  grid-area: dom;
+  background: #f3f6ff;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px dashed #cfd6ff;
+  font-size: 13px;
 }
 
-.domBox h2{
-    color:#4f6bdc;
-    margin-bottom:15px;
+.dom-demo h3 {
+  color: #6f7cff;
+  margin-bottom: 10px;
 }
 
-.keyBox{
-    background:#f2f4f8;
-    border:2px solid #ddd;
-    padding:15px;
-    border-radius:10px;
-    font-weight:bold;
+.dom-box {
+  background: #f5f7ff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #d0d6ff;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.dom-box p {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.key-text {
+  margin-top: 10px;
+  color: #6f7cff;
+  font-weight: 600;
 }

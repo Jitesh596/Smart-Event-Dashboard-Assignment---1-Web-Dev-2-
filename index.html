@@ -1,64 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Event Dashboard</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text"><h2>Smart Event Dashboard</h2></div>
+      <div class="eventform"></div>
+      <form class="form">
+        <label for="eventTitle">Event Title</label>
+        <input type="text" id="eventTitle" name="eventTitle" />
+        <br />
+        <br />
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" />
+        <br />
+        <br />
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+          <option value="Conference">Conference</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Meetup">Meetup</option>
+          <option value="Webinar">Webinar</option>
+          <option value="Social">Social</option>
+        </select>
+        <br />
+        <br />
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+        <br />
+        <br />
+        <input class="btn" type="submit" value="Add Event" />
+      </form>
+      <div class="events">
+        <button class="clearall">Clear all Event</button>
+        <button class="sample">Add sample Event</button>
+        <div class="cards"></div>
+      </div>
+      <div class="domContainer">
+       <div class="dom-demo">
+  <h3>DOM Manipulation Demo</h3>
 
-<h1 class="title">Smart Event Dashboard</h1>
+  <div class="dom-box">
+    <p id="keyOutput" class="key-text">You pressed: None</p>
+  </div>
 
-<div class="main">
+</div>
 
-    <!-- LEFT FORM -->
-    <div class="card formCard">
-        <h2>Add New Event</h2>
 
-        <form id="form">
-            <label>Event Title:</label>
-            <input type="text" id="eventTitle" required>
-
-            <label>Event Date:</label>
-            <input type="date" id="eventDate" required>
-
-            <label>Category:</label>
-            <select id="category">
-                <option>Conference</option>
-                <option>Workshop</option>
-                <option>Meetup</option>
-                <option>Webinar</option>
-                <option>Social</option>
-            </select>
-
-            <label>Description:</label>
-            <textarea id="Description" rows="4"></textarea>
-
-            <button class="addBtn">Add Event</button>
-        </form>
-    </div>
-
-    <!-- RIGHT EVENTS -->
-    <div class="card eventsCard">
-        <h2>My Events</h2>
-
-        <div class="topBtns">
-            <button id="clear">Clear All Events</button>
-            <button id="sample">Add Sample Events</button>
-        </div>
-
-        <div class="event_Cards"></div>
-    </div>
-
-    <div class="domBox">
-        <h2>DOM Manipulation Demo</h2>
-
-        <div class="keyBox">
-            You Pressed: <span id="key">None</span>
-        </div>
-    </div>
+</div>
 
 </div>
 
