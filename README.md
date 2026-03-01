@@ -1,6 +1,6 @@
 # Smart-Event-Dashboard-Assignment---1-Web-Dev-2-
 
-🚀 Features
+🚀<u>Features</u>
 
 🔍 Search weather by city name
 
@@ -18,7 +18,7 @@
 
 
 
-🛠️ Tech Stack
+🛠️ <u>Tech Stack</u>
 
 HTML5
 
