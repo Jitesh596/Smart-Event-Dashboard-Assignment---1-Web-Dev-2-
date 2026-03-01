@@ -1,6 +1,6 @@
 # Smart-Event-Dashboard-Assignment---1-Web-Dev-2-
 
-🚀 #Features
+🚀 # Features
 
 🔍 Search weather by city name
 🌡️ Display temperature, weather condition, humidity, and wind speed
