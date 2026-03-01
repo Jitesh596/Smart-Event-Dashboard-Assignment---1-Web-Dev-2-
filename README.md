@@ -1,31 +1,26 @@
 # Smart-Event-Dashboard-Assignment---1-Web-Dev-2-
 
-🚀<u>Features</u>
+## <u>🚀 Key Features</u>
 
-🔍 Search weather by city name
+🔍 Search weather by city name  
 
-🌡️ Display temperature, weather condition, humidity, and wind speed
+🌡️ Display temperature, weather condition, humidity, and wind speed  
 
-⚡ Uses async/await with Fetch API
+⚡ Uses async/await with Fetch API  
 
-🛑 Handles invalid city & network errors gracefully
+🛑 Handles invalid city & network errors gracefully  
 
-💾 Stores search history using Local Storage
+💾 Stores search history using Local Storage  
 
-🔁 Click previous searches to re-fetch weather
+🔁 Click previous searches to re-fetch weather  
 
-🧠 Displays console logs to understand Event Loop behavior
+🧠 Displays console logs to understand Event Loop behavior  
 
 
+## <u>🛠️ Tech Stack</u>
 
-🛠️ <u>Tech Stack</u>
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Fetch API
-
-Local Storage
+- HTML5  
+- CSS3  
+- JavaScript  
+- Fetch API  
+- Local Storage  
